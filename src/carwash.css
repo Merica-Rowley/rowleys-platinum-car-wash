@@ -175,3 +175,90 @@ td:first-child {
   cursor: pointer;
   transition: opacity 0.2s;
 }
+
+/* Carousel Styling */
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel input[type="radio"] {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  transition: background 0.3s;
+  border-radius: 50%;
+
+  /* Centering with flexbox */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.arrow.left {
+  left: 10px;
+  padding-right: 0.25rem;
+  padding-bottom: 0.3rem;
+}
+
+.arrow.right {
+  right: 10px;
+  padding-left: 0.25rem;
+  padding-bottom: 0.3rem;
+}
+
+/* Show correct arrows based on current slide */
+#slide1:checked ~ #arrow-left-1,
+#slide1:checked ~ #arrow-right-1,
+#slide2:checked ~ #arrow-left-2,
+#slide2:checked ~ #arrow-right-2,
+#slide3:checked ~ #arrow-left-3,
+#slide3:checked ~ #arrow-right-3 {
+  display: flex;
+}
