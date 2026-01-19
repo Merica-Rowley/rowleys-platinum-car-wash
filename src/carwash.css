@@ -11,6 +11,7 @@ body {
   --dark-blue: #273896;
   --light-blue: #24aade;
   --white: #ffffff;
+  --lt-gray: #d9d9d9;
 }
 
 .inter-font {
@@ -195,10 +196,48 @@ td:first-child {
 
 .slide {
   min-width: 100%;
+  background-color: var(--lt-gray);
+}
+
+.two-columns-slide {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 0rem;
+  margin: 2rem;
+  align-items: center;
+}
+
+.slide-text {
+  padding: 2rem 0rem 2rem 5rem;
+  margin: 0;
+  color: black;
+}
+
+.slide-button {
+  display: block;
+  margin: 1.5rem auto 0 auto;
+  padding: 0.75rem 2rem;
+  width: 60%;
+  background-color: var(--light-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.slide-button:hover {
+  opacity: 0.7;
+}
+
+.slide-image {
+  padding: 3rem;
 }
 
 .slide img {
   width: 100%;
+  border-radius: 30px;
   height: auto;
   display: block;
 }
@@ -213,6 +252,10 @@ td:first-child {
 
 #slide3:checked ~ .slides {
   transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slides {
+  transform: translateX(-300%);
 }
 
 .arrow {
@@ -259,6 +302,8 @@ td:first-child {
 #slide2:checked ~ #arrow-left-2,
 #slide2:checked ~ #arrow-right-2,
 #slide3:checked ~ #arrow-left-3,
-#slide3:checked ~ #arrow-right-3 {
+#slide3:checked ~ #arrow-right-3,
+#slide4:checked ~ #arrow-left-4,
+#slide4:checked ~ #arrow-right-4 {
   display: flex;
 }
