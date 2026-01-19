@@ -12,6 +12,8 @@ body {
   --light-blue: #24aade;
   --white: #ffffff;
   --lt-gray: #d9d9d9;
+  --lt-black: #333333;
+  --black: #000000;
 }
 
 .inter-font {
@@ -51,6 +53,11 @@ nav {
   justify-content: center;
 }
 
+.logo a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
 .logo img {
   width: 15rem;
   height: auto;
@@ -83,6 +90,12 @@ a:hover {
   object-fit: cover;
 }
 
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero-overlay {
   position: absolute;
   top: 50%;
@@ -90,6 +103,21 @@ a:hover {
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem 2rem;
+  width: 85%;
+  border-radius: 20px;
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hero-overlay-one-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3rem 2rem;
   width: 85%;
   border-radius: 20px;
   color: var(--white);
@@ -147,7 +175,7 @@ td:first-child {
   background-color: var(--white);
   border: 0.3rem solid var(--dark-blue);
   border-radius: 50%;
-  margin: 1rem auto;
+  margin: 1rem 1rem 1rem auto;
   padding: 0.4rem 0.6rem;
   display: flex; /* Changed from inline-block */
   align-items: center;
@@ -210,12 +238,12 @@ td:first-child {
 .slide-text {
   padding: 2rem 0rem 2rem 5rem;
   margin: 0;
-  color: black;
+  color: var(--black);
 }
 
 .slide-button {
   display: block;
-  margin: 1.5rem auto 0 auto;
+  margin: 1.5rem 85% 0 15%;
   padding: 0.75rem 2rem;
   width: 60%;
   background-color: var(--light-blue);
@@ -306,4 +334,51 @@ td:first-child {
 #slide4:checked ~ #arrow-left-4,
 #slide4:checked ~ #arrow-right-4 {
   display: flex;
+}
+
+/* About Page Extras */
+.two-columns-about {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  margin: 4rem;
+  align-items: start;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.about-text {
+  padding: 0;
+  margin: 0;
+  color: var(--lt-black);
+  font-size: 1.1rem;
+  max-width: 65ch;
+  line-height: 1.5;
+}
+
+/* Pricing Page Extras */
+.pricing-content {
+  margin: 3rem 0rem;
+  padding: 0rem 2rem 2rem 2rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.wash-name-heading {
+  font-size: 3rem;
+  justify-self: center;
+}
+
+.wash-list {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  padding: 1.5rem 2rem;
+  margin: auto 5rem;
+  border-radius: 18px;
+  box-shadow: -0.75rem -0.75rem var(--light-blue);
 }
