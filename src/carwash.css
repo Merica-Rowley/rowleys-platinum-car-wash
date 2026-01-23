@@ -167,6 +167,7 @@ td:first-child {
   background-color: var(--light-blue);
   color: var(--white);
   margin: 0;
+  padding: 0.5rem;
 }
 
 .logo-footer {
@@ -203,6 +204,32 @@ td:first-child {
   font-size: 0.85rem;
   cursor: pointer;
   transition: opacity 0.2s;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--light-blue);
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.social-buttons a:hover {
+  background: var(--light-blue);
+}
+
+.social-buttons i {
+  font-size: 1.2rem;
 }
 
 /* Carousel Styling */
@@ -364,21 +391,126 @@ td:first-child {
 /* Pricing Page Extras */
 .pricing-content {
   margin: 3rem 0rem;
-  padding: 0rem 2rem 2rem 2rem;
+  padding: 0.5rem 2rem 2rem 2rem;
   background-color: var(--dark-blue);
   color: var(--white);
 }
 
+.wash-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Makes both cards same height */
+}
+
 .wash-name-heading {
   font-size: 3rem;
-  justify-self: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 0;
 }
 
 .wash-list {
   background-color: var(--white);
   color: var(--dark-blue);
   padding: 1.5rem 2rem;
-  margin: auto 5rem;
   border-radius: 18px;
   box-shadow: -0.75rem -0.75rem var(--light-blue);
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes pricing to bottom */
+}
+
+.wash-list > div:first-child {
+  margin-bottom: 2rem; /* Space between features and pricing */
+}
+
+.wash-list > div > div {
+  padding: 0.5rem 0; /* Space between each item */
+}
+
+.wash-list > div:last-child {
+  border-top: 2px solid var(--lt-gray);
+  padding-top: 1.5rem;
+  margin-top: auto; /* Pushes pricing section to bottom */
+}
+
+.wash-pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FAQ Page Extras */
+.accordion {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+details {
+  background: white;
+  border: 1px solid var(--lt-gray);
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  padding-right: 2rem;
+  position: relative;
+  list-style: none;
+  color: var(--lt-black);
+}
+
+/* Hide the default marker */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::marker {
+  display: none;
+}
+
+/* Create custom marker on the right */
+summary::before {
+  content: "▶"; /* Triangle pointing right */
+  position: absolute;
+  right: 0.5rem;
+  transition: transform 0.3s;
+}
+
+/* Rotate marker when open */
+details[open] summary::before {
+  transform: rotate(90deg); /* Points down when open */
+}
+
+summary:hover {
+  color: var(--light-blue);
+}
+
+details[open] summary {
+  margin-bottom: 1rem;
+  color: var(--dark-blue);
+}
+
+details p {
+  padding-left: 1rem;
+  line-height: 1.6;
+  color: var(--lt-black);
+}
+
+details a {
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+details a:hover {
+  text-decoration: underline;
 }
