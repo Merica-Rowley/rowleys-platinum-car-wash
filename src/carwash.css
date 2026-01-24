@@ -292,11 +292,12 @@ td:first-child {
   padding: 3rem;
 }
 
-.slide img {
+.slide-image img {
   width: 100%;
+  height: 65vh;
+  object-fit: cover;
+  object-position: center;
   border-radius: 30px;
-  height: auto;
-  display: block;
 }
 
 #slide1:checked ~ .slides {
@@ -368,10 +369,10 @@ td:first-child {
 /* About Page Extras */
 .two-columns-about {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.25fr;
   gap: 3rem;
-  margin: 4rem;
-  align-items: start;
+  margin: 3rem;
+  align-items: center;
 }
 
 .about-image img {
@@ -388,6 +389,10 @@ td:first-child {
   font-size: 1.1rem;
   max-width: 65ch;
   line-height: 1.5;
+}
+
+.about-text p {
+  margin: 1rem 0;
 }
 
 /* Pricing Page Extras */
