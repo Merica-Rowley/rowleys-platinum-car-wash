@@ -675,6 +675,8 @@ nav > a,
     padding: 0.5rem;
     grid-column: auto; /* Reset individual link positioning */
     color: var(--white);
+    width: 100%;
+    text-align: center;
   }
 
   /* Show nav links when checkbox is checked */
