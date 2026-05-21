@@ -3,7 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rowley's Platinum Car Wash - Pricing</title>
+    <meta
+      name="description"
+      content="Car wash pricing at Rowley's Platinum Car Wash in Washington, Utah. Single washes from $5, monthly memberships from $15. The Express and The Works packages available."
+    />
+    <title>Pricing | Rowley's Platinum Car Wash | Washington, Utah</title>
+
+    <!-- Open Graph Tags -->
+    <meta
+      property="og:title"
+      content="Pricing | Rowley's Platinum Car Wash | Washington, Utah"
+    />
+    <meta
+      property="og:description"
+      content="Car wash pricing at Rowley's Platinum Car Wash in Washington, Utah. Single washes from $5, monthly memberships from $15. The Express and The Works packages available."
+    />
+    <meta
+      property="og:image"
+      content="https://platinumcarwash.com/public/logo.png"
+    />
+    <meta
+      property="og:url"
+      content="https://platinumcarwash.com/pricing.html"
+    />
+    <meta property="og:type" content="website" />
+
     <link rel="stylesheet" href="carwash.css" />
     <link
       rel="stylesheet"
@@ -13,6 +37,67 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoWash",
+        "name": "Rowley's Platinum Car Wash",
+        "url": "https://platinumcarwash.com",
+        "telephone": "435-216-9598",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "471 W Telegraph St",
+          "addressLocality": "Washington",
+          "addressRegion": "UT",
+          "postalCode": "84780",
+          "addressCountry": "US"
+        },
+        "openingHours": ["Mo-Sa 09:00-19:00"],
+        "sameAs": [
+          "https://facebook.com/platinumcarwashutah/",
+          "https://instagram.com/platinumcarwash_ut/",
+          "https://yelp.com/biz/rowleys-platinum-car-wash-washington"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoWash",
+        "name": "Rowley's Platinum Car Wash",
+        "url": "https://yourwebsite.com/pricing.html",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Car Wash Packages",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "The Express — Single Wash",
+              "price": "5.00",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "The Express — Monthly Membership",
+              "price": "15.00",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "The Works — Single Wash",
+              "price": "10.00",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "The Works — Monthly Membership",
+              "price": "25.00",
+              "priceCurrency": "USD"
+            }
+          ]
+        }
+      }
+    </script>
   </head>
   <body class="inter-font">
     <div class="header">
@@ -31,7 +116,7 @@
         </div>
 
         <div class="nav-links">
-          <a href="pricing.html">Pricing</a>
+          <a href="pricing.html" class="active">Pricing</a>
           <a href="index.html#hours">Hours</a>
           <a href="about.html">About</a>
           <a href="faq.html">FAQ</a>
@@ -40,8 +125,11 @@
     </div>
     <main>
       <div class="hero">
-        <img src="/public/red_truck.jpeg" alt="Rowley's Platinum Car Wash" />
-        <div class="hero-overlay-one-line">Our Washes</div>
+        <img
+          src="/public/red_truck.jpg"
+          alt="Red truck at Rowley's Platinum Car Wash in Washington, Utah"
+        />
+        <h1 class="hero-overlay-one-line">Our Washes</h1>
       </div>
       <div class="pricing-content">
         <div class="two-columns">
@@ -101,12 +189,17 @@
     </main>
     <div class="footer two-columns">
       <div class="logo-footer">
-        <img src="/public/logo.png" alt="Rowley's Platinum Car Wash Logo" />
+        <img
+          src="/public/logo.png"
+          alt="Rowley's Platinum Car Wash Logo"
+          loading="lazy"
+        />
       </div>
       <div class="footer-list">
         <a href="about.html">About</a>
         <a href="faq.html">FAQ</a>
         <a href="tel:435-216-9598">Contact: 435-216-9598</a>
+        <address>471 W Telegraph St, Washington, UT 84780</address>
         <div class="social-buttons">
           <a href="https://facebook.com/platinumcarwashutah/" target="_blank">
             <i class="fab fa-facebook"></i>

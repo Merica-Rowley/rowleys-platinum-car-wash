@@ -3,7 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rowley's Platinum Car Wash</title>
+    <meta
+      name="description"
+      content="Rowley's Platinum Car Wash in Washington, Utah offers the best value car wash in Southern Utah. Open Mon–Sat 9AM–7PM. Ceramic washes, lifted trucks welcome."
+    />
+    <title>Rowley's Platinum Car Wash | Washington, Utah</title>
+
+    <!-- Open Graph Tags -->
+    <meta
+      property="og:title"
+      content="Rowley's Platinum Car Wash | Washington, Utah"
+    />
+    <meta
+      property="og:description"
+      content="Southern Utah's best value car wash in Washington, Utah. Open Mon–Sat 9AM–7PM."
+    />
+    <meta
+      property="og:image"
+      content="https://platinumcarwash.com/public/logo.png"
+    />
+    <meta property="og:url" content="https://platinumcarwash.com/" />
+    <meta property="og:type" content="website" />
+
     <link rel="stylesheet" href="carwash.css" />
     <link
       rel="stylesheet"
@@ -13,6 +34,29 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoWash",
+        "name": "Rowley's Platinum Car Wash",
+        "url": "https://platinumcarwash.com",
+        "telephone": "435-216-9598",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "471 W Telegraph St",
+          "addressLocality": "Washington",
+          "addressRegion": "UT",
+          "postalCode": "84780",
+          "addressCountry": "US"
+        },
+        "openingHours": ["Mo-Sa 09:00-19:00"],
+        "sameAs": [
+          "https://facebook.com/platinumcarwashutah/",
+          "https://instagram.com/platinumcarwash_ut/",
+          "https://yelp.com/biz/rowleys-platinum-car-wash-washington"
+        ]
+      }
+    </script>
   </head>
   <body class="inter-font">
     <div class="header">
@@ -40,8 +84,15 @@
     </div>
     <main>
       <div class="hero">
-        <video src="/public/wash_video.mov" autoplay muted loop>
-          Your browser does not support video format.
+        <video
+          src="/public/wash_video.mp4"
+          autoplay
+          muted
+          loop
+          aria-label="Car wash tunnel video at Rowley's Platinum Car Wash in Washington, Utah"
+        >
+          Visit Rowley's Platinum Car Wash in Washington, Utah for Southern
+          Utah's best value car wash.
         </video>
         <div class="hero-overlay">Southern Utah's<br />Best Value Car Wash</div>
       </div>
@@ -62,10 +113,16 @@
                   top-notch car wash services at unbeatable prices. Come visit
                   us and experience the difference today!
                 </p>
-                <button class="slide-button inter-font">Pricing</button>
+                <a href="pricing.html" class="slide-button inter-font"
+                  >Pricing</a
+                >
               </div>
               <div class="slide-image">
-                <img src="/public/tunnel.jpeg" alt="Slide 1" />
+                <img
+                  src="/public/tunnel.jpg"
+                  alt="Car going through Rowley's Platinum Car Wash tunnel in Washington, Utah"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -74,13 +131,18 @@
               <div class="slide-text">
                 <h2>Clean Your Big Rigs and Lifted Trucks</h2>
                 <p>
-                  Got a big rig or a lifted truck? No problem! We have the
-                  equipment to handle all your vehicle needs. Come see us today!
+                  Got a big rig or a lifted truck? No problem! Rowley's Platinum
+                  Car Wash has the equipment to handle all your vehicle needs.
+                  Come see us today!
                 </p>
-                <button class="slide-button inter-font">FAQ</button>
+                <a href="faq.html" class="slide-button inter-font">FAQ</a>
               </div>
               <div class="slide-image">
-                <img src="/public/big_red.jpeg" alt="Slide 2" />
+                <img
+                  src="/public/big_red.jpg"
+                  alt="Big truck being washed at Rowley's Platinum Car Wash"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -90,14 +152,18 @@
                 <h2>Muddy Wheel Wells? No Problem!</h2>
                 <p>
                   Southern Utah is a prime location for off-roading, which means
-                  muddy wheel wells! Our powerful wash systems are designed to
-                  tackle even the toughest dirt and grime, leaving your vehicle
-                  spotless.
+                  muddy wheel wells! Conveniently located minutes from St.
+                  George, our powerful wash systems are designed to tackle even
+                  the toughest dirt and grime, leaving your vehicle spotless.
                 </p>
-                <button class="slide-button inter-font">FAQ</button>
+                <a href="faq.html" class="slide-button inter-font">FAQ</a>
               </div>
               <div class="slide-image">
-                <img src="/public/wheelwell.jpeg" alt="Slide 3" />
+                <img
+                  src="/public/wheelwell.jpg"
+                  alt="Muddy wheel wells being cleaned at Rowley's Platinum Car Wash in Southern Utah"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -111,10 +177,16 @@
                   protection against environmental contaminants, keeping your
                   car looking shiny and new longer.
                 </p>
-                <button class="slide-button inter-font">Pricing</button>
+                <a href="pricing.html" class="slide-button inter-font"
+                  >Pricing</a
+                >
               </div>
               <div class="slide-image">
-                <img src="/public/a_clean_truck.jpg" alt="Slide 4" />
+                <img
+                  src="/public/a_clean_truck.jpg"
+                  alt="Clean truck after ceramic wash at Rowley's Platinum Car Wash"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -185,12 +257,17 @@
     </main>
     <div class="footer two-columns">
       <div class="logo-footer">
-        <img src="/public/logo.png" alt="Rowley's Platinum Car Wash Logo" />
+        <img
+          src="/public/logo.png"
+          alt="Rowley's Platinum Car Wash Logo"
+          loading="lazy"
+        />
       </div>
       <div class="footer-list">
         <a href="about.html">About</a>
         <a href="faq.html">FAQ</a>
         <a href="tel:435-216-9598">Contact: 435-216-9598</a>
+        <address>471 W Telegraph St, Washington, UT 84780</address>
         <div class="social-buttons">
           <a href="https://facebook.com/platinumcarwashutah/" target="_blank">
             <i class="fab fa-facebook"></i>

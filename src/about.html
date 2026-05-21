@@ -3,7 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rowley's Platinum Car Wash - About Us</title>
+    <meta
+      name="description"
+      content="Rowley's Platinum Car Wash is a family-owned car wash in Washington, Utah, proudly serving the Southern Utah community. Part of the Rowley's Red Barn family."
+    />
+    <title>About Us | Rowley's Platinum Car Wash | Washington, Utah</title>
+
+    <!-- Open Graph Tags -->
+    <meta
+      property="og:title"
+      content="About Us | Rowley's Platinum Car Wash | Washington, Utah"
+    />
+    <meta
+      property="og:description"
+      content="Rowley's Platinum Car Wash is a family-owned car wash in Washington, Utah, proudly serving the Southern Utah community. Part of the Rowley's Red Barn family."
+    />
+    <meta
+      property="og:image"
+      content="https://platinumcarwash.com/public/logo.png"
+    />
+    <meta property="og:url" content="https://platinumcarwash.com/about.html" />
+    <meta property="og:type" content="website" />
+
     <link rel="stylesheet" href="carwash.css" />
     <link
       rel="stylesheet"
@@ -13,6 +34,29 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoWash",
+        "name": "Rowley's Platinum Car Wash",
+        "url": "https://platinumcarwash.com",
+        "telephone": "435-216-9598",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "471 W Telegraph St",
+          "addressLocality": "Washington",
+          "addressRegion": "UT",
+          "postalCode": "84780",
+          "addressCountry": "US"
+        },
+        "openingHours": ["Mo-Sa 09:00-19:00"],
+        "sameAs": [
+          "https://facebook.com/platinumcarwashutah/",
+          "https://instagram.com/platinumcarwash_ut/",
+          "https://yelp.com/biz/rowleys-platinum-car-wash-washington"
+        ]
+      }
+    </script>
   </head>
   <body class="inter-font">
     <div class="header">
@@ -33,21 +77,29 @@
         <div class="nav-links">
           <a href="pricing.html">Pricing</a>
           <a href="index.html#hours">Hours</a>
-          <a href="about.html">About</a>
+          <a href="about.html" class="active">About</a>
           <a href="faq.html">FAQ</a>
         </div>
       </nav>
     </div>
     <main>
       <div class="hero">
-        <img src="/public/red_truck.jpeg" alt="Rowley's Platinum Car Wash" />
-        <div class="hero-overlay-one-line">About Us</div>
+        <img
+          src="/public/red_truck.jpg"
+          alt="Red truck at Rowley's Platinum Car Wash in Washington, Utah"
+        />
+        <h1 class="hero-overlay-one-line">About Us</h1>
       </div>
       <div class="two-columns-about">
         <div class="about-image">
-          <img src="/public/rowleys_red_barn_southern_utah.jpeg" alt="" />
+          <img
+            src="/public/rowleys_red_barn_southern_utah.jpg"
+            alt="Rowley's Red Barn in Southern Utah, located next to Rowley's Platinum Car Wash"
+            loading="lazy"
+          />
         </div>
         <div class="about-text">
+          <h2>Family-Owned Car Wash in Washington, Utah</h2>
           <p>
             Rowley’s Platinum Car Wash is a family-owned car wash proudly
             serving Washington, Utah and the surrounding community. Built on the
@@ -56,6 +108,7 @@
             visit fast, friendly, and dependable. From daily drivers to weekend
             cruisers, we treat every car like it’s our own.
           </p>
+          <h2>Part of the Rowley's Red Barn Family</h2>
           <p>
             We’re also excited to be part of the Rowley’s Red Barn family,
             making your stop with us more than just a car wash. Right next to
@@ -71,12 +124,17 @@
     </main>
     <div class="footer two-columns">
       <div class="logo-footer">
-        <img src="/public/logo.png" alt="Rowley's Platinum Car Wash Logo" />
+        <img
+          src="/public/logo.png"
+          alt="Rowley's Platinum Car Wash Logo"
+          loading="lazy"
+        />
       </div>
       <div class="footer-list">
         <a href="about.html">About</a>
         <a href="faq.html">FAQ</a>
         <a href="tel:435-216-9598">Contact: 435-216-9598</a>
+        <address>471 W Telegraph St, Washington, UT 84780</address>
         <div class="social-buttons">
           <a href="https://facebook.com/platinumcarwashutah/" target="_blank">
             <i class="fab fa-facebook"></i>

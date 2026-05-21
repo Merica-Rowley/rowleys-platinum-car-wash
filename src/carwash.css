@@ -1,10 +1,28 @@
+:root {
+  --dark-blue: #273896;
+  --light-blue: #24aade;
+  --white: #ffffff;
+  --lt-gray: #d9d9d9;
+  --lt-black: #333333;
+  --black: #000000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 head,
 body {
   margin: 0;
   border: 0;
   padding: 0;
-  scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: 100vw;
   background-color: var(--light-blue);
@@ -14,15 +32,6 @@ main {
   margin: 0;
   padding: 0;
   background-color: var(--white);
-}
-
-:root {
-  --dark-blue: #273896;
-  --light-blue: #24aade;
-  --white: #ffffff;
-  --lt-gray: #d9d9d9;
-  --lt-black: #333333;
-  --black: #000000;
 }
 
 .inter-font {
@@ -74,12 +83,19 @@ nav {
   transform: translate(0.1rem, -0.3rem); /* Center and move down */
 }
 
-nav > a {
+.nav-links a {
   font-size: 1.1rem;
   cursor: pointer;
   transition: opacity 0.2s;
   text-decoration: none;
   color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.nav-links a.active {
+  background-color: var(--dark-blue);
+  opacity: 0.85;
 }
 
 a:hover {
@@ -207,7 +223,7 @@ td:first-child {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   gap: 0.5rem;
 }
 
@@ -217,6 +233,12 @@ td:first-child {
   font-size: 0.85rem;
   cursor: pointer;
   transition: opacity 0.2s;
+}
+
+address {
+  font-style: normal;
+  color: var(--white);
+  font-size: 0.85rem;
 }
 
 .social-buttons {
@@ -234,11 +256,11 @@ td:first-child {
   color: white;
   border-radius: 50%;
   text-decoration: none;
-  transition: background 0.3s;
+  transition: opacity 0.3s;
 }
 
 .social-buttons a:hover {
-  background: var(--light-blue);
+  opacity: 0.7;
 }
 
 .social-buttons i {
@@ -282,7 +304,6 @@ td:first-child {
 }
 
 .slide-button {
-  display: block;
   margin: 1.5rem 85% 0 15%;
   padding: 0.75rem 2rem;
   width: 60%;
@@ -293,6 +314,9 @@ td:first-child {
   font-size: 1rem;
   cursor: pointer;
   transition: opacity 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
 }
 
 .slide-button:hover {
