@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Rowley's Platinum Car Wash is a family-owned car wash in Washington, Utah, proudly serving the Southern Utah community. Part of the Rowley's Red Barn family."
+      content="Access your Rowley's Platinum Car Wash membership account through FlexWash."
     />
-    <title>About Us | Rowley's Platinum Car Wash | Washington, Utah</title>
+    <title>Account | Rowley's Platinum Car Wash | Washington, Utah</title>
 
     <!-- Open Graph Tags -->
     <meta
       property="og:title"
-      content="About Us | Rowley's Platinum Car Wash | Washington, Utah"
+      content="Rowley's Platinum Car Wash | Washington, Utah"
     />
     <meta
       property="og:description"
-      content="Rowley's Platinum Car Wash is a family-owned car wash in Washington, Utah, proudly serving the Southern Utah community. Part of the Rowley's Red Barn family."
+      content="Southern Utah's best value car wash in Washington, Utah. Open Mon–Sat 9AM–7PM."
     />
     <meta
       property="og:image"
       content="https://platinumcarwash.com/public/logo.png"
     />
-    <meta property="og:url" content="https://platinumcarwash.com/about.html" />
+    <meta property="og:url" content="https://platinumcarwash.com/" />
     <meta property="og:type" content="website" />
 
     <link rel="stylesheet" href="carwash.css" />
@@ -76,7 +76,7 @@
 
         <div class="nav-links">
           <a href="pricing.html">Pricing</a>
-          <a href="account.html">Account</a>
+          <a href="account.html" class="active">Account</a>
         </div>
       </nav>
     </div>
@@ -84,39 +84,63 @@
       <div class="hero">
         <img
           src="/public/red_truck.jpg"
+          loading="lazy"
           alt="Red truck at Rowley's Platinum Car Wash in Washington, Utah"
         />
-        <h1 class="hero-overlay-one-line">About Us</h1>
+        <h1 class="hero-overlay-one-line">Account</h1>
       </div>
-      <div class="two-columns-about">
-        <div class="about-image">
-          <img
-            src="/public/rowleys_red_barn_southern_utah.jpg"
-            alt="Rowley's Red Barn in Southern Utah, located next to Rowley's Platinum Car Wash"
-            loading="lazy"
-          />
-        </div>
-        <div class="about-text">
-          <h2>Family-Owned Car Wash in Washington, Utah</h2>
-          <p>
-            Rowley’s Platinum Car Wash is a family-owned car wash proudly
-            serving Washington, Utah and the surrounding community. Built on the
-            values of hard work, quality, and hometown service, our goal is
-            simple: give every vehicle the care it deserves while making each
-            visit fast, friendly, and dependable. From daily drivers to weekend
-            cruisers, we treat every car like it’s our own.
-          </p>
-          <h2>Part of the Rowley's Red Barn Family</h2>
-          <p>
-            We’re also excited to be part of the Rowley’s Red Barn family,
-            making your stop with us more than just a car wash. Right next to
-            the car wash, you’ll find fresh local produce, homemade bakery
-            items, and sweet treats that make errands a little more enjoyable.
-            Whether you’re grabbing a clean car, freshly baked rolls, or
-            something sweet for the road, Rowley’s Platinum Car Wash and
-            Rowley’s Red Barn are here to serve our community, one smile, one
-            wash, and one great experience at a time.
-          </p>
+
+      <div class="account-section">
+        <div class="tab-container">
+          <input type="radio" name="account-tab" id="tab-existing" checked />
+          <input type="radio" name="account-tab" id="tab-new" />
+
+          <div class="tab-labels">
+            <label for="tab-existing" class="tab-label">Existing Member</label>
+            <label for="tab-new" class="tab-label">New Member</label>
+          </div>
+
+          <div class="tab-panels">
+            <div class="tab-panel" id="panel-existing">
+              <p class="tab-description">
+                Already a member? Manage your membership, update payment info,
+                or cancel below.
+              </p>
+              <div style="width: 100%">
+                <iframe
+                  src="https://app.flexwash.com/member-portal?organizationId=302"
+                  style="
+                    width: 100%;
+                    min-height: 500px;
+                    border: none;
+                    border-radius: 12px;
+                  "
+                  frameborder="0"
+                >
+                </iframe>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="panel-new">
+              <p class="tab-description">
+                New to Rowley's Platinum Car Wash? Sign up for a membership
+                below to get started.
+              </p>
+              <div style="width: 100%">
+                <iframe
+                  src="https://app.flexwash.com/sign-up-portal?organizationId=302&carWashId=323"
+                  style="
+                    width: 100%;
+                    min-height: 500px;
+                    border: none;
+                    border-radius: 12px;
+                  "
+                  frameborder="0"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
