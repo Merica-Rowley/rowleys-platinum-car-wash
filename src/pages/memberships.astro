@@ -1,0 +1,579 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
+---
+
+<BaseLayout
+  title="Memberships | Rowley's Platinum Car Wash | Washington, Utah"
+  description="Sign up for an unlimited car wash membership at Rowley's Platinum Car Wash in Washington, Utah. Starting at $15/month. Cancel anytime."
+  canonical="https://platinumcarwash.com/memberships"
+>
+  <!-- ── Page Hero ── -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <p class="section-eyebrow">Unlimited Washes</p>
+      <h1 class="page-hero-title">Memberships</h1>
+      <p class="page-hero-sub">
+        Wash as often as you want. One low monthly price.
+      </p>
+    </div>
+    <div class="page-hero-accent"></div>
+  </section>
+
+  <!-- ── Membership Options ── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-eyebrow">Choose Your Plan</p>
+      <h2 class="section-title">Two Plans, Zero Hassle</h2>
+      <p class="section-subtitle">
+        Both plans include unlimited washes and easy online account management.
+        Cancel anytime—no contracts, no fees.
+      </p>
+
+      <div class="plans-grid">
+        <div class="plan-card">
+          <div class="plan-header">
+            <p class="plan-name">The Express</p>
+            <div class="plan-price">
+              $15<span>/mo</span>
+            </div>
+            <p class="plan-tagline">Fast, reliable, everyday clean.</p>
+          </div>
+          <ul class="plan-features">
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Quick pressure wash</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Inside wheel well wash</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Tunnel wash</span>
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Spot free rinse</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Air blow dry</span>
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Towels available for additional drying</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Lifted trucks welcome</span
+              >
+            </li>
+          </ul>
+          <a href="#manage" class="btn btn-outline-navy">Get Started</a>
+        </div>
+
+        <div class="plan-card">
+          <div class="plan-header">
+            <p class="plan-name">The Works</p>
+            <div class="plan-price">
+              $25<span>/mo</span>
+            </div>
+            <p class="plan-tagline">The full treatment, every time.</p>
+          </div>
+          <ul class="plan-features">
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Pressure wash</span>
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Bug removal</span>
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Inside wheel well wash</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Undercarriage spray</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Triple foam soap</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Ceramic coating</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Tire scrub</span>
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Spot free rinse</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Air blow dry</span>
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Towels available for additional drying</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Lifted trucks welcome</span
+              >
+            </li>
+          </ul>
+          <a href="#manage" class="btn btn-outline-navy">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How It Works ── -->
+  <section class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow">Simple Process</p>
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">
+        Getting started takes less than two minutes.
+      </p>
+
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Choose Your Plan</h3>
+          <p>
+            Pick The Express or The Works below and sign up through our
+            membership portal.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Get Your Tag</h3>
+          <p>
+            We'll set you up with a windshield tag on your first visit that
+            identifies your vehicle automatically.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Wash Anytime</h3>
+          <p>
+            Pull in whenever you like. Your tag is scanned and you're through —
+            no stopping, no paying each time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Why Membership ── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-eyebrow">Why Membership</p>
+      <h2 class="section-title">More Than Just Savings</h2>
+      <div class="benefits-grid">
+        <div class="benefit">
+          <div class="benefit-icon">
+            <Repeat2 size={24} color="var(--cyan)" />
+          </div>
+          <div>
+            <h3>Unlimited Washes</h3>
+            <p>
+              Wash as often as you want. Daily if you like — the price never
+              changes.
+            </p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit-icon">
+            <CreditCard size={24} color="var(--cyan)" />
+          </div>
+          <div>
+            <h3>Easy Billing</h3>
+            <p>
+              Your card is charged automatically each month. No cash, no
+              stopping to pay.
+            </p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit-icon">
+            <XCircle size={24} color="var(--cyan)" />
+          </div>
+          <div>
+            <h3>Cancel Anytime</h3>
+            <p>
+              No contracts, no cancellation fees. Manage or cancel your
+              membership online anytime.
+            </p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit-icon">
+            <HelpCircle size={24} color="var(--cyan)" />
+          </div>
+          <div>
+            <h3>Easy to Manage</h3>
+            <p>
+              Update your payment method, switch plans, or cancel — all from the
+              portal below.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Membership Portal ── -->
+  <section class="section section-alt" id="manage">
+    <div class="container">
+      <p class="section-eyebrow">Member Portal</p>
+      <h2 class="section-title">Sign Up or Manage Your Membership</h2>
+      <p class="section-subtitle">
+        Use the portal below to sign up for a new membership, update your
+        payment method, switch plans, or cancel.
+      </p>
+
+      <div class="portal-wrapper">
+        <div class="iframe-tabs">
+          <div class="tab-buttons">
+            <button class="tab-btn tab-btn--active" data-tab="signup">
+              Sign Up
+            </button>
+            <button class="tab-btn" data-tab="manage">
+              Manage Membership
+            </button>
+          </div>
+
+          <div class="tab-content" id="tab-signup">
+            <!-- Sign up iframe goes here -->
+            <div style="width: 100%;">
+              <iframe
+                src="https://app.flexwash.com/sign-up-portal?organizationId=302"
+                style="width: 100%; min-height: 500px; border: none;"
+                frameborder="0"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="tab-content tab-content--hidden" id="tab-manage">
+            <!-- Manage membership iframe goes here -->
+            <div style="width: 100%;">
+              <iframe
+                src="https://app.flexwash.com/member-portal?organizationId=302"
+                style="width: 100%; min-height: 500px; border: none;"
+                frameborder="0"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ Nudge ── -->
+  <section class="section">
+    <div class="container faq-nudge">
+      <h2 class="section-title">Questions About Memberships?</h2>
+      <p class="section-subtitle">
+        Check our FAQ for answers to common membership questions, or get in
+        touch directly.
+      </p>
+      <div
+        style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;"
+      >
+        <a href="/faq" class="btn btn-primary">Read the FAQ</a>
+        <a href="/contact" class="btn btn-outline-navy">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const tabBtns = document.querySelectorAll<HTMLButtonElement>(".tab-btn");
+  const tabContents = document.querySelectorAll<HTMLElement>(".tab-content");
+
+  tabBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const target = btn.dataset.tab;
+
+      tabBtns.forEach((b) => b.classList.remove("tab-btn--active"));
+      tabContents.forEach((c) => c.classList.add("tab-content--hidden"));
+
+      btn.classList.add("tab-btn--active");
+      document
+        .getElementById(`tab-${target}`)
+        ?.classList.remove("tab-content--hidden");
+    });
+  });
+</script>
+
+<style>
+  /* ── Page Hero ── */
+  .page-hero {
+    position: relative;
+    background: var(--light);
+    padding: 4rem 1.5rem 3.5rem;
+    border-bottom: 1px solid #dceaf4;
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .page-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-hero-sub {
+    color: var(--gray);
+    font-size: 1.05rem;
+  }
+
+  .page-hero-accent {
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 40%;
+    height: 6px;
+    background: var(--cyan);
+    z-index: 2;
+  }
+
+  /* ── Plans Grid ── */
+  .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .plan-card {
+    border: 2px solid #e2eaf0;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    transition: box-shadow 0.2s;
+  }
+
+  .plan-card:hover {
+    box-shadow: 0 8px 28px rgba(43, 57, 144, 0.12);
+  }
+
+  .plan-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .plan-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cyan);
+  }
+
+  .plan-price {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+  }
+
+  .plan-price span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--gray);
+  }
+
+  .plan-tagline {
+    color: var(--gray);
+    font-size: 0.9rem;
+  }
+
+  /* ── Plan Features ── */
+  .plan-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    flex: 1;
+  }
+
+  .plan-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--dark);
+  }
+
+  /* ── How It Works ── */
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .step-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: var(--white);
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .step h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  .step p {
+    color: var(--gray);
+    font-size: 0.9rem;
+  }
+
+  /* ── Benefits ── */
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .benefit {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .benefit-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    background: rgba(41, 190, 240, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .benefit h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.2rem;
+  }
+
+  .benefit p {
+    color: var(--gray);
+    font-size: 0.9rem;
+  }
+
+  /* ── Portal ── */
+  .portal-wrapper {
+    margin-top: 1.5rem;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #dceaf4;
+  }
+
+  .iframe-tabs {
+    margin-top: 0.5rem;
+  }
+
+  .tab-buttons {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid #e2eaf0;
+    margin-bottom: 0;
+  }
+
+  .tab-btn {
+    padding: 0.75rem 1.75rem;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--gray);
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    cursor: pointer;
+    transition:
+      color 0.2s,
+      border-color 0.2s;
+  }
+
+  .tab-btn:hover {
+    color: var(--navy);
+  }
+
+  .tab-btn--active {
+    color: var(--navy);
+    border-bottom-color: var(--cyan);
+  }
+
+  .tab-content--hidden {
+    display: none;
+  }
+
+  .tab-content iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 0 0 12px 12px;
+    display: block;
+  }
+
+  /* ── FAQ Nudge ── */
+  .faq-nudge {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .steps-grid,
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

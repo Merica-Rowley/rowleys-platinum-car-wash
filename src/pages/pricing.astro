@@ -1,0 +1,482 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Droplets, Sparkles, Check } from "lucide-astro";
+---
+
+<BaseLayout
+  title="Pricing | Rowley's Platinum Car Wash | Washington, Utah"
+  description="Car wash pricing at Rowley's Platinum Car Wash in Washington, Utah. Single washes from $5, monthly memberships from $15. The Express and The Works packages available."
+  canonical="https://platinumcarwash.com/pricing"
+>
+  <!-- ── Page Hero ── -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <p class="section-eyebrow">Simple & Transparent</p>
+      <h1 class="page-hero-title">Pricing</h1>
+      <p class="page-hero-sub">No surprises. Just clean cars.</p>
+    </div>
+    <div class="hero-accent"></div>
+  </section>
+
+  <!-- ── Pricing Cards ── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-eyebrow">Our Packages</p>
+      <h2 class="section-title">Pick Your Wash</h2>
+      <p class="section-subtitle">
+        Both packages available as a single wash or an unlimited monthly
+        membership. Cancel your membership anytime.
+      </p>
+
+      <div class="pricing-grid">
+        <!-- The Express -->
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <div class="pricing-icon">
+              <Droplets size={32} color="var(--cyan)" />
+            </div>
+            <h2 class="pricing-name">The Express</h2>
+            <p class="pricing-tagline">Fast and effective everyday wash.</p>
+          </div>
+
+          <div class="pricing-options">
+            <div class="pricing-option">
+              <div class="pricing-option-label">Single Wash</div>
+              <div class="pricing-option-amount">$5</div>
+              <div class="pricing-option-sub">Pay each visit</div>
+            </div>
+            <div class="pricing-option-divider"></div>
+            <div class="pricing-option">
+              <div class="pricing-option-label">Monthly Membership</div>
+              <div class="pricing-option-amount">$15<span>/mo</span></div>
+              <div class="pricing-option-sub">Unlimited washes</div>
+            </div>
+          </div>
+
+          <ul class="pricing-features">
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Quick pressure wash</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Inside wheel well wash</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Tunnel wash</span>
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Spot free rinse</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Air blow dry</span>
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Towels available for additional drying</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Lifted trucks welcome</span
+              >
+            </li>
+          </ul>
+
+          <div class="pricing-card-actions">
+            <a href="/memberships" class="btn btn-outline-navy"
+              >Get Membership</a
+            >
+          </div>
+        </div>
+
+        <!-- The Works -->
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <div class="pricing-icon">
+              <Sparkles size={32} color="var(--cyan)" />
+            </div>
+            <h2 class="pricing-name">The Works</h2>
+            <p class="pricing-tagline">
+              The full treatment for a showroom finish.
+            </p>
+          </div>
+
+          <div class="pricing-options">
+            <div class="pricing-option">
+              <div class="pricing-option-label">Single Wash</div>
+              <div class="pricing-option-amount">$10</div>
+              <div class="pricing-option-sub">Pay each visit</div>
+            </div>
+            <div class="pricing-option-divider"></div>
+            <div class="pricing-option">
+              <div class="pricing-option-label">Monthly Membership</div>
+              <div class="pricing-option-amount">$25<span>/mo</span></div>
+              <div class="pricing-option-sub">Unlimited washes</div>
+            </div>
+          </div>
+
+          <ul class="pricing-features">
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Pressure wash</span>
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Bug removal</span>
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Inside wheel well wash</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Undercarriage spray</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Triple foam soap</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Ceramic coating</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Tire scrub</span>
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Spot free rinse</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span>Air blow dry</span>
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Towels available for additional drying</span
+              >
+            </li>
+            <li>
+              <Check size={16} color="var(--cyan)" /><span
+                >Lifted trucks welcome</span
+              >
+            </li>
+          </ul>
+
+          <div class="pricing-card-actions">
+            <a href="/memberships" class="btn btn-outline-navy"
+              >Get Membership</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <p class="pricing-note">
+        Not sure which wash is right for you? <a href="/faq"
+          >Check out our FAQ</a
+        > or <a href="/contact">get in touch</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Membership Value CTA ── -->
+  <section class="section section-alt">
+    <div class="container membership-value">
+      <div class="membership-value-text">
+        <p class="section-eyebrow">Save More with a Membership</p>
+        <h2 class="section-title">Wash More, Pay Less</h2>
+        <p class="section-subtitle">
+          With the Express membership at just $15/month, three washes already
+          pays for itself. Wash as often as you like, every day if you want!
+        </p>
+        <a href="/memberships" class="btn btn-primary">View Memberships</a>
+      </div>
+      <div class="membership-value-table">
+        <div class="value-table-header">
+          <span>Washes per month</span>
+          <span>Single wash cost</span>
+          <span>Membership cost</span>
+        </div>
+        <div class="value-table-row">
+          <span>1x</span>
+          <span>$5</span>
+          <span class="value-highlight">$15</span>
+        </div>
+        <div class="value-table-row value-table-row--even">
+          <span>2x</span>
+          <span>$10</span>
+          <span class="value-highlight">$15</span>
+        </div>
+        <div class="value-table-row">
+          <span>3x</span>
+          <span>$15</span>
+          <span class="value-highlight">$15</span>
+        </div>
+        <div class="value-table-row value-table-row--even">
+          <span>Unlimited</span>
+          <span>—</span>
+          <span class="value-highlight">$15</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ Nudge ── -->
+  <section class="section">
+    <div class="container faq-nudge">
+      <h2 class="section-title">Have Questions?</h2>
+      <p class="section-subtitle">
+        We've answered the most common ones on our FAQ page.
+      </p>
+      <div
+        style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;"
+      >
+        <a href="/faq" class="btn btn-primary">Read the FAQ</a>
+        <a href="/contact" class="btn btn-outline-navy">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* ── Page Hero ── */
+  .page-hero {
+    position: relative;
+    background: var(--light);
+    padding: 4rem 1.5rem 3.5rem;
+    border-bottom: 1px solid #dceaf4;
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .page-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-hero-sub {
+    color: var(--gray);
+    font-size: 1.05rem;
+  }
+
+  /* ── Pricing Grid ── */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .pricing-card {
+    border: 2px solid #e2eaf0;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s;
+  }
+
+  .pricing-card:hover {
+    box-shadow: 0 8px 28px rgba(43, 57, 144, 0.12);
+  }
+
+  .pricing-card-header {
+    padding: 2rem 2rem 1.5rem;
+    border-bottom: 1px solid #e2eaf0;
+  }
+
+  .pricing-icon {
+    margin-bottom: 0.75rem;
+  }
+
+  .pricing-name {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.25rem;
+  }
+
+  .pricing-tagline {
+    color: var(--gray);
+    font-size: 0.9rem;
+  }
+
+  /* ── Pricing Options ── */
+  .pricing-options {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .pricing-option {
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .pricing-option-divider {
+    width: 1px;
+    background: #e2eaf0;
+    margin: 1rem 0;
+  }
+
+  .pricing-option-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gray);
+  }
+
+  .pricing-option-amount {
+    font-family: var(--font-display);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.1;
+  }
+
+  .pricing-option-amount span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray);
+  }
+
+  .pricing-option-sub {
+    font-size: 0.78rem;
+    color: var(--gray);
+  }
+
+  /* ── Features List ── */
+  .pricing-features {
+    list-style: none;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    flex: 1;
+    border-top: 1px solid #e2eaf0;
+  }
+
+  .pricing-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--dark);
+  }
+
+  /* ── Card Actions ── */
+  .pricing-card-actions {
+    padding: 1.5rem 2rem;
+    border-top: 1px solid #e2eaf0;
+  }
+
+  .pricing-card-actions .btn-outline-navy {
+    display: block;
+    text-align: center;
+    padding: 0.7rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 2px solid var(--navy);
+    color: var(--navy);
+    transition:
+      background 0.2s,
+      color 0.2s;
+  }
+
+  .pricing-card-actions .btn-outline-navy:hover {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  /* ── Pricing Note ── */
+  .pricing-note {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--gray);
+    font-size: 0.9rem;
+  }
+
+  .pricing-note a {
+    color: var(--navy);
+    font-weight: 600;
+    text-decoration: none;
+    text-underline-offset: 3px;
+  }
+
+  .pricing-note a:hover {
+    color: var(--cyan);
+  }
+
+  /* ── Membership Value ── */
+  .membership-value {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .membership-value-table {
+    border: 2px solid #e2eaf0;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 0.9rem;
+  }
+
+  .value-table-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: var(--navy);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.75rem 1rem;
+    gap: 0.5rem;
+  }
+
+  .value-table-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0.75rem 1rem;
+    gap: 0.5rem;
+    color: var(--dark);
+    align-items: center;
+    background: var(--white);
+  }
+
+  .value-highlight {
+    color: var(--navy);
+    font-weight: 700;
+  }
+
+  /* ── FAQ Nudge ── */
+  .faq-nudge {
+    max-width: 600px;
+    text-align: center;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .membership-value {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+</style>

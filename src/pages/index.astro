@@ -1,0 +1,554 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
+---
+
+<BaseLayout
+  title="Rowley's Platinum Car Wash | Washington, Utah"
+  description="Rowley's Platinum Car Wash in Washington, Utah. Fast, affordable single washes and unlimited monthly memberships. Serving Washington, St. George, Hurricane, and Southern Utah."
+  canonical="https://platinumcarwash.com"
+>
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img
+        src="/images/hero-placeholder.jpg"
+        alt="Car going through Rowley's Platinum Car Wash tunnel in Washington, Utah"
+        class="hero-img"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content container">
+      <p class="section-eyebrow">Washington, Utah's Car Wash</p>
+      <h1 class="hero-title">Clean Car.<br />Simple Pricing.</h1>
+      <p class="hero-sub">
+        Single washes from $5. Unlimited monthly memberships from $15.
+      </p>
+      <div class="hero-actions">
+        <a href="/pricing" class="btn btn-primary">See Pricing</a>
+        <a href="/memberships" class="btn btn-outline-white">Join Today</a>
+      </div>
+    </div>
+    <div class="hero-accent"></div>
+  </section>
+
+  <!-- ── Packages Overview ── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-eyebrow">Our Washes</p>
+      <h2 class="section-title">Two Great Options</h2>
+      <p class="section-subtitle">
+        Pick the wash that fits your needs — or go unlimited with a membership.
+      </p>
+
+      <div class="packages-grid">
+        <div class="package-card">
+          <div class="package-icon">
+            <Droplets size={36} color="var(--cyan)" />
+          </div>
+          <h3 class="package-name">The Express</h3>
+          <p class="package-desc">
+            A fast, thorough wash that gets you back on the road quickly.
+            Perfect for regular upkeep.
+          </p>
+          <div class="package-pricing">
+            <div class="price-item">
+              <span class="price-amount">$5</span>
+              <span class="price-label">Single Wash</span>
+            </div>
+            <div class="price-divider"></div>
+            <div class="price-item">
+              <span class="price-amount">$15</span>
+              <span class="price-label">Monthly Membership</span>
+            </div>
+          </div>
+          <a href="/pricing" class="btn btn-outline-navy">View Details</a>
+        </div>
+
+        <div class="package-card">
+          <div class="package-icon">
+            <Sparkles size={36} color="var(--cyan)" />
+          </div>
+          <h3 class="package-name">The Works</h3>
+          <p class="package-desc">
+            Our premium wash with everything included. The full treatment for a
+            showroom-ready finish.
+          </p>
+          <div class="package-pricing">
+            <div class="price-item">
+              <span class="price-amount">$10</span>
+              <span class="price-label">Single Wash</span>
+            </div>
+            <div class="price-divider"></div>
+            <div class="price-item">
+              <span class="price-amount">$25</span>
+              <span class="price-label">Monthly Membership</span>
+            </div>
+          </div>
+          <a href="/pricing" class="btn btn-outline-navy">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Why Choose Us ── -->
+  <section class="section section-alt">
+    <div class="container why-grid">
+      <div class="why-text">
+        <p class="section-eyebrow">Why Rowley's</p>
+        <h2 class="section-title">Built for Southern Utah</h2>
+        <p class="section-subtitle">
+          We know Utah roads. We know Utah dust. We built a car wash that
+          handles both.
+        </p>
+
+        <div class="features-list">
+          <div class="feature">
+            <div class="feature-icon">
+              <Zap size={22} color="var(--cyan)" />
+            </div>
+            <div>
+              <h3>Fast Service</h3>
+              <p>In and out quickly — no long waits, no hassle.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <Repeat2 size={22} color="var(--cyan)" />
+            </div>
+            <div>
+              <h3>Unlimited Memberships</h3>
+              <p>Wash as often as you like for one low monthly price.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <Truck size={22} color="var(--cyan)" />
+            </div>
+            <div>
+              <h3>Trucks Welcome</h3>
+              <p>Lifted trucks and larger vehicles are no problem.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <MapPin size={22} color="var(--cyan)" />
+            </div>
+            <div>
+              <h3>Conveniently Located</h3>
+              <p>Easy access in Washington, just off the main corridor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-image">
+        <img
+          src="/images/tunnel-placeholder.jpg"
+          alt="Car going through the wash tunnel at Rowley's Platinum Car Wash"
+          class="why-img"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Membership CTA ── -->
+  <section class="section membership-cta">
+    <div class="container membership-cta-inner">
+      <div class="membership-cta-text">
+        <p class="section-eyebrow section-eyebrow--light">Memberships</p>
+        <h2 class="section-title" style="color: var(--white);">
+          Unlimited Washes.<br />One Monthly Price.
+        </h2>
+        <p
+          style="color: rgba(255,255,255,0.8); font-size: 1.05rem; margin-bottom: 1.5rem;"
+        >
+          Starting at just $15/month. Cancel anytime. Wash as often as you want.
+        </p>
+        <a href="/memberships" class="btn btn-cyan-solid">Get Started</a>
+      </div>
+      <div class="membership-cta-prices">
+        <div class="cta-price-card cta-price-card--accent">
+          <span class="cta-price-name">The Express</span>
+          <span class="cta-price-amount">$15<span>/mo</span></span>
+        </div>
+        <div class="cta-price-card cta-price-card--accent">
+          <span class="cta-price-name">The Works</span>
+          <span class="cta-price-amount">$25<span>/mo</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Clean Car Photo Break ── -->
+  <section class="photo-break">
+    <img
+      src="/images/clean-car-placeholder.jpg"
+      alt="Freshly washed vehicle at Rowley's Platinum Car Wash in Washington, Utah"
+      class="photo-break-img"
+    />
+    <div class="photo-break-overlay">
+      <p class="photo-break-quote">
+        "The cleanest car in Southern Utah starts here."
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Location Snippet ── -->
+  <section class="section">
+    <div class="container location-snippet">
+      <div class="location-image">
+        <img
+          src="/images/exterior-placeholder.jpg"
+          alt="Exterior of Rowley's Platinum Car Wash in Washington, Utah"
+          class="location-img"
+        />
+      </div>
+      <div class="location-text">
+        <p class="section-eyebrow">Find Us</p>
+        <h2 class="section-title">Easy to Get To</h2>
+        <p class="section-subtitle">
+          Located in Washington, Utah. Serving the greater St. George area
+          including Hurricane, Santa Clara, Ivins, and beyond.
+        </p>
+        <address class="location-address">
+          471 W Telegraph St<br />
+          Washington, UT 84780
+        </address>
+        <p class="location-hours">
+          <strong>Hours:</strong> Monday–Saturday, 9:00 AM – 7:00 PM
+        </p>
+        <div
+          style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.25rem;"
+        >
+          <a href="/location" class="btn btn-primary">Get Directions</a>
+          <a href="tel:4352169598" class="btn btn-outline-navy">Call Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* ── Hero ── */
+  .hero {
+    position: relative;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba(26, 31, 94, 0.88) 0%,
+      rgba(26, 31, 94, 0.55) 60%,
+      rgba(26, 31, 94, 0.2) 100%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    max-width: 600px;
+  }
+
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 7vw, 5rem);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .hero-sub {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 2rem;
+    max-width: 440px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* ── Packages ── */
+  .packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .package-card {
+    border: 2px solid #e2eaf0;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: box-shadow 0.2s;
+  }
+
+  .package-card:hover {
+    box-shadow: 0 8px 24px rgba(43, 57, 144, 0.12);
+  }
+
+  .package-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .package-name {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  .package-desc {
+    color: var(--gray);
+    font-size: 0.95rem;
+    flex: 1;
+  }
+
+  .package-pricing {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid #e2eaf0;
+    border-bottom: 1px solid #e2eaf0;
+  }
+
+  .price-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .price-amount {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+  }
+
+  .price-label {
+    font-size: 0.75rem;
+    color: var(--gray);
+    margin-top: 0.2rem;
+  }
+
+  .price-divider {
+    width: 1px;
+    height: 40px;
+    background: #e2eaf0;
+  }
+
+  /* ── Why Choose Us ── */
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .feature {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .feature-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: rgba(41, 190, 240, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.2rem;
+  }
+
+  .feature p {
+    color: var(--gray);
+    font-size: 0.9rem;
+  }
+
+  .why-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(26, 31, 94, 0.15);
+  }
+
+  /* ── Membership CTA ── */
+  .membership-cta {
+    background: var(--navy);
+  }
+
+  .membership-cta-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .cta-price-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-price-card--accent {
+    background: rgba(41, 190, 240, 0.15);
+    border-color: var(--cyan);
+  }
+
+  .cta-price-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .cta-price-amount {
+    font-family: var(--font-display);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .cta-price-amount span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  /* ── Photo Break ── */
+  .photo-break {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+  }
+
+  .photo-break-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .photo-break-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 31, 94, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photo-break-quote {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+    max-width: 700px;
+    padding: 0 1.5rem;
+    letter-spacing: 0.02em;
+  }
+
+  /* ── Location ── */
+  .location-snippet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .location-img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(26, 31, 94, 0.12);
+  }
+
+  .location-address {
+    font-style: normal;
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+  }
+
+  .location-hours {
+    color: var(--gray);
+    font-size: 0.95rem;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .why-grid,
+    .membership-cta-inner,
+    .location-snippet {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .why-image {
+      order: -1;
+    }
+
+    .hero-accent {
+      display: none;
+    }
+
+    .photo-break {
+      height: 220px;
+    }
+  }
+</style>

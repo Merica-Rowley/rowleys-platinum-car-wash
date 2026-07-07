@@ -1,0 +1,231 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { MapPin, Clock, Phone, Mail } from "lucide-astro";
+---
+
+<BaseLayout
+  title="Contact | Rowley's Platinum Car Wash | Washington, Utah"
+  description="Contact Rowley's Platinum Car Wash in Washington, Utah. Call us, stop by, or send us a message. We're open Monday–Saturday 9AM–7PM."
+  canonical="https://platinumcarwash.com/contact"
+>
+  <!-- ── Page Hero ── -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h1 class="page-hero-title">Contact Us</h1>
+      <p class="page-hero-sub">We'd love to hear from you.</p>
+    </div>
+    <div class="page-hero-accent"></div>
+  </section>
+
+  <!-- ── Contact Grid ── -->
+  <section class="section">
+    <div class="container contact-grid">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2 class="contact-info-title">Reach Out</h2>
+        <p class="contact-info-sub">
+          Have a question, concern, or just want to say hi? Here's how to find
+          us.
+        </p>
+
+        <div class="info-blocks">
+          <div class="info-block">
+            <div class="info-icon">
+              <Phone size={20} color="var(--cyan)" />
+            </div>
+            <div>
+              <h3 class="info-label">Phone</h3>
+              <a href="tel:4352169598" class="info-text">435-216-9598</a>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon">
+              <Mail size={20} color="var(--cyan)" />
+            </div>
+            <div>
+              <h3 class="info-label">Email</h3>
+              <!-- Replace with real email address -->
+              <a href="mailto:info@platinumcarwash.com" class="info-text"
+                >info@platinumcarwash.com</a
+              >
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon">
+              <MapPin size={20} color="var(--cyan)" />
+            </div>
+            <div>
+              <h3 class="info-label">Address</h3>
+              <address class="info-text">
+                471 W Telegraph St<br />
+                Washington, UT 84780
+              </address>
+              <a href="/location" class="info-link">View on map →</a>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon">
+              <Clock size={20} color="var(--cyan)" />
+            </div>
+            <div>
+              <h3 class="info-label">Hours</h3>
+              <div class="hours-grid">
+                <span>Monday</span>
+                <span>9:00 AM – 7:00 PM</span>
+                <span>Tuesday</span>
+                <span>9:00 AM – 7:00 PM</span>
+                <span>Wednesday</span>
+                <span>9:00 AM – 7:00 PM</span>
+                <span>Thursday</span>
+                <span>9:00 AM – 7:00 PM</span>
+                <span>Friday</span>
+                <span>9:00 AM – 7:00 PM</span>
+                <span>Saturday</span>
+                <span>9:00 AM – 7:00 PM</span>
+                <span>Sunday</span>
+                <span>Closed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* ── Page Hero ── */
+  .page-hero {
+    position: relative;
+    background: var(--light);
+    padding: 4rem 1.5rem 3.5rem;
+    border-bottom: 1px solid #dceaf4;
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .page-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-hero-sub {
+    color: var(--gray);
+    font-size: 1.05rem;
+  }
+
+  .page-hero-accent {
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 40%;
+    height: 6px;
+    background: var(--cyan);
+    z-index: 2;
+  }
+
+  /* ── Contact Grid ── */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: start;
+    max-width: 600px;
+  }
+
+  /* ── Contact Info ── */
+  .contact-info-title {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.4rem;
+  }
+
+  .contact-info-sub {
+    color: var(--gray);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .info-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .info-block {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .info-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: rgba(41, 190, 240, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-label {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+  }
+
+  .info-text {
+    font-style: normal;
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .info-link {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--cyan);
+    transition: color 0.2s;
+  }
+
+  .info-link:hover {
+    color: var(--navy);
+  }
+
+  .hours-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.2rem 1.5rem;
+    font-size: 0.95rem;
+    color: var(--gray);
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+  }
+</style>

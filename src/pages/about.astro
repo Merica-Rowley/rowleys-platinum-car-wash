@@ -1,0 +1,307 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Heart, Shield, Sparkles, Users } from "lucide-astro";
+---
+
+<BaseLayout
+  title="About | Rowley's Platinum Car Wash | Washington, Utah"
+  description="Learn about Rowley's Platinum Car Wash in Washington, Utah. A local, family-friendly car wash serving Southern Utah with quality washes and affordable memberships."
+  canonical="https://platinumcarwash.com/about"
+>
+  <!-- ── Page Hero ── -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <p class="section-eyebrow">Our Story</p>
+      <h1 class="page-hero-title">About Us</h1>
+      <p class="page-hero-sub">
+        A Southern Utah car wash built on quality and simplicity.
+      </p>
+    </div>
+    <div class="page-hero-accent"></div>
+  </section>
+
+  <!-- ── Story Section ── -->
+  <section class="section">
+    <div class="container story-grid">
+      <div class="story-image">
+        <img
+          src="/images/exterior-placeholder.jpg"
+          alt="Exterior of Rowley's Platinum Car Wash in Washington, Utah"
+          class="story-img"
+        />
+      </div>
+      <div class="story-text">
+        <p class="section-eyebrow">Who We Are</p>
+        <h2 class="section-title">Local. Simple. Clean.</h2>
+        <p class="story-body">
+          Rowley's Platinum Car Wash was built with one goal in mind: give
+          Southern Utah drivers a fast, reliable, and affordable way to keep
+          their vehicles looking their best.
+        </p>
+        <p class="story-body">
+          We're a single-location car wash right here in Washington, Utah — no
+          corporate nonsense, just a clean car every time you visit. Whether
+          you're stopping in for a quick $5 Express wash or signing up for an
+          unlimited membership, we treat every customer and every vehicle the
+          same way.
+        </p>
+        <p class="story-body">
+          Utah roads are tough on vehicles. Between the red dirt, the dust, and
+          the summer heat, your car takes a beating. We built Rowley's Platinum
+          to handle all of it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Values ── -->
+  <section class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow">What We Stand For</p>
+      <h2 class="section-title">Our Values</h2>
+      <p class="section-subtitle">
+        Everything we do comes back to these four things.
+      </p>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <Sparkles size={24} color="var(--cyan)" />
+          </div>
+          <h3>Quality</h3>
+          <p>
+            Every wash should leave your vehicle looking its best. We don't cut
+            corners.
+          </p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <Shield size={24} color="var(--cyan)" />
+          </div>
+          <h3>Reliability</h3>
+          <p>
+            Open six days a week, rain or shine. You can count on us being here.
+          </p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <Heart size={24} color="var(--cyan)" />
+          </div>
+          <h3>Community</h3>
+          <p>
+            We're proud to be a local Washington business serving our neighbors
+            across Southern Utah.
+          </p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <Users size={24} color="var(--cyan)" />
+          </div>
+          <h3>Simplicity</h3>
+          <p>
+            Two packages. Transparent pricing. No hidden fees, no upsells, no
+            confusion.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Photo Break ── -->
+  <section class="photo-break">
+    <img
+      src="/images/tunnel-placeholder.jpg"
+      alt="Inside the wash tunnel at Rowley's Platinum Car Wash"
+      class="photo-break-img"
+    />
+    <div class="photo-break-overlay">
+      <p class="photo-break-quote">
+        Proudly serving Washington, Utah and the greater St. George area.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="section">
+    <div class="container about-cta">
+      <h2 class="section-title">Come See Us</h2>
+      <p class="section-subtitle">
+        Stop by anytime Monday through Saturday. No appointment needed! Just
+        pull up and we'll take care of the rest.
+      </p>
+      <div
+        style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;"
+      >
+        <a href="/pricing" class="btn btn-primary">See Pricing</a>
+        <a href="/memberships" class="btn btn-outline-navy">Join Today</a>
+        <a href="/location" class="btn btn-outline-navy">Find Us</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* ── Page Hero ── */
+  .page-hero {
+    position: relative;
+    background: var(--light);
+    padding: 4rem 1.5rem 3.5rem;
+    border-bottom: 1px solid #dceaf4;
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .page-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-hero-sub {
+    color: var(--gray);
+    font-size: 1.05rem;
+  }
+
+  .page-hero-accent {
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 40%;
+    height: 6px;
+    background: var(--cyan);
+    z-index: 2;
+  }
+
+  /* ── Story ── */
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .story-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(26, 31, 94, 0.12);
+  }
+
+  .story-body {
+    color: var(--gray);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .story-body:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ── Values ── */
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .value-card {
+    background: var(--white);
+    border: 2px solid #e2eaf0;
+    border-radius: 12px;
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition:
+      box-shadow 0.2s,
+      border-color 0.2s;
+  }
+
+  .value-card:hover {
+    border-color: var(--cyan);
+    box-shadow: 0 4px 16px rgba(41, 190, 240, 0.15);
+  }
+
+  .value-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(41, 190, 240, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .value-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  .value-card p {
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* ── Photo Break ── */
+  .photo-break {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+  }
+
+  .photo-break-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .photo-break-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 31, 94, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photo-break-quote {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+    max-width: 700px;
+    padding: 0 1.5rem;
+    letter-spacing: 0.02em;
+  }
+
+  /* ── CTA ── */
+  .about-cta {
+    text-align: center;
+    max-width: 600px;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .story-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .photo-break {
+      height: 220px;
+    }
+  }
+</style>

@@ -1,0 +1,351 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { MapPin, Clock, Phone, Navigation, ExternalLink } from "lucide-astro";
+---
+
+<BaseLayout
+  title="Location | Rowley's Platinum Car Wash | Washington, Utah"
+  description="Find Rowley's Platinum Car Wash at 471 W Telegraph St, Washington, Utah. Open Monday–Saturday 9AM–7PM. Serving Washington, St. George, Hurricane, Santa Clara, and Ivins."
+  canonical="https://platinumcarwash.com/location"
+>
+  <!-- ── Page Hero ── -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <p class="section-eyebrow">Find Us</p>
+      <h1 class="page-hero-title">Location</h1>
+      <p class="page-hero-sub">Conveniently located in Washington, Utah.</p>
+    </div>
+    <div class="page-hero-accent"></div>
+  </section>
+
+  <!-- ── Map + Info ── -->
+  <section class="section">
+    <div class="container location-grid">
+      <div class="location-info">
+        <div class="info-block">
+          <div class="info-icon"><MapPin size={20} color="var(--cyan)" /></div>
+          <div>
+            <h2 class="info-label">Address</h2>
+            <address class="info-text">
+              471 W Telegraph St<br />
+              Washington, UT 84780
+            </address>
+            <a
+              href="https://maps.google.com/?q=471+W+Telegraph+St+Washington+UT+84780"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="info-link"
+              >Get Directions <ExternalLink size={14} />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-icon"><Clock size={20} color="var(--cyan)" /></div>
+        <div>
+          <h2 class="info-label">Hours</h2>
+          <div class="hours-grid">
+            <span>Monday</span>
+            <span>9:00 AM – 7:00 PM</span>
+            <span>Tuesday</span>
+            <span>9:00 AM – 7:00 PM</span>
+            <span>Wednesday</span>
+            <span>9:00 AM – 7:00 PM</span>
+            <span>Thursday</span>
+            <span>9:00 AM – 7:00 PM</span>
+            <span>Friday</span>
+            <span>9:00 AM – 7:00 PM</span>
+            <span>Saturday</span>
+            <span>9:00 AM – 7:00 PM</span>
+            <span>Sunday</span>
+            <span>Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-icon"><Phone size={20} color="var(--cyan)" /></div>
+        <div>
+          <h2 class="info-label">Phone</h2>
+          <a href="tel:4352169598" class="info-text">435-216-9598</a>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-icon">
+          <Navigation size={20} color="var(--cyan)" />
+        </div>
+        <div>
+          <h2 class="info-label">Getting Here</h2>
+          <p class="info-text">
+            Located on Telegraph St in Washington, just off the main corridor by
+            Walmart, Home Depot, and Costco.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506.387439497255!2d-113.51813577961951!3d37.12891937620711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca5ba3b7b20d35%3A0x542f3d7c9f411e19!2sRowley's%20Platinum%20Car%20Wash!5e1!3m2!1sen!2sus!4v1783367390889!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </section>
+
+  <!-- ── Service Area ── -->
+  <section class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow">Service Area</p>
+      <h2 class="section-title">Serving Southern Utah</h2>
+      <p class="section-subtitle">
+        Rowley's Platinum Car Wash is proud to serve Washington and the
+        surrounding communities across Southern Utah.
+      </p>
+
+      <div class="service-area-grid">
+        <div class="service-area-card">
+          <h3>Washington</h3>
+          <p>Our home base — right here in Washington, Utah.</p>
+        </div>
+        <div class="service-area-card">
+          <h3>St. George</h3>
+          <p>Just minutes away from downtown St. George.</p>
+        </div>
+        <div class="service-area-card">
+          <h3>Hurricane</h3>
+          <p>A short drive from Hurricane and the surrounding area.</p>
+        </div>
+        <div class="service-area-card">
+          <h3>Santa Clara</h3>
+          <p>Conveniently close to Santa Clara residents.</p>
+        </div>
+        <div class="service-area-card">
+          <h3>Ivins</h3>
+          <p>Easy access for drivers coming from Ivins.</p>
+        </div>
+        <div class="service-area-card">
+          <h3>And Beyond</h3>
+          <p>Serving all of Southern Utah and the greater St. George area.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="section">
+    <div class="container location-cta">
+      <h2 class="section-title">Ready for a Clean Car?</h2>
+      <p class="section-subtitle">
+        Stop by anytime Monday through Saturday. No appointment needed.
+      </p>
+      <div
+        style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;"
+      >
+        <a href="/pricing" class="btn btn-primary">See Pricing</a>
+        <a href="/memberships" class="btn btn-outline-navy">Join Today</a>
+        <a href="tel:4352169598" class="btn btn-outline-navy">Call Us</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* ── Page Hero ── */
+  .page-hero {
+    position: relative;
+    background: var(--light);
+    padding: 4rem 1.5rem 3.5rem;
+    border-bottom: 1px solid #dceaf4;
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .page-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-hero-sub {
+    color: var(--gray);
+    font-size: 1.05rem;
+  }
+
+  .page-hero-accent {
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 40%;
+    height: 6px;
+    background: var(--cyan);
+    z-index: 2;
+  }
+
+  /* ── Location Grid ── */
+  .location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    padding-bottom: 3rem;
+  }
+
+  /* ── Info Blocks ── */
+  .location-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .info-block {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .info-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: rgba(41, 190, 240, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-label {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.35rem;
+  }
+
+  .info-text {
+    font-style: normal;
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .info-phone {
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  .info-link {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--cyan);
+    transition: color 0.2s;
+  }
+
+  .info-link:hover {
+    color: var(--navy);
+  }
+
+  /* ── Hours Grid ── */
+  .hours-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.2rem 1.5rem;
+    font-size: 0.95rem;
+    color: var(--gray);
+  }
+
+  /* ── Map ── */
+  .map-container {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(26, 31, 94, 0.12);
+    height: 420px;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+  }
+
+  /* ── Service Area ── */
+  .service-area-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .service-area-card {
+    background: var(--white);
+    border: 2px solid #e2eaf0;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    transition:
+      box-shadow 0.2s,
+      border-color 0.2s;
+  }
+
+  .service-area-card:hover {
+    border-color: var(--cyan);
+    box-shadow: 0 4px 16px rgba(41, 190, 240, 0.15);
+  }
+
+  .service-area-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.3rem;
+  }
+
+  .service-area-card p {
+    font-size: 0.875rem;
+    color: var(--gray);
+  }
+
+  /* ── CTA ── */
+  .location-cta {
+    text-align: center;
+    max-width: 600px;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .location-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .map-container {
+      height: 300px;
+    }
+
+    .service-area-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .service-area-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
