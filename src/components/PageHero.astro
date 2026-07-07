@@ -1,0 +1,56 @@
+---
+export interface Props {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+}
+
+const { eyebrow, title, subtitle } = Astro.props;
+---
+
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <p class="section-eyebrow">{eyebrow}</p>
+    <h1 class="page-hero-title">{title}</h1>
+    <p class="page-hero-sub">{subtitle}</p>
+  </div>
+  <div class="page-hero-accent"></div>
+</section>
+
+<style>
+  .page-hero {
+    position: relative;
+    background: var(--light);
+    padding: 4rem 1.5rem 3.5rem;
+    border-bottom: 1px solid #dceaf4;
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .page-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-hero-sub {
+    color: var(--gray);
+    font-size: 1.05rem;
+  }
+
+  .page-hero-accent {
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 40%;
+    height: 6px;
+    background: var(--cyan);
+    z-index: 2;
+  }
+</style>
