@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Page Not Found | Rowley's Platinum Car Wash"
+  description="The page you're looking for doesn't exist. Visit Rowley's Platinum Car Wash homepage for car wash services in Washington, Utah."
+>
+  <section class="not-found">
+    <div class="container not-found-inner">
+      <p class="section-eyebrow">404 Error</p>
+      <h1 class="not-found-title">Page Not Found</h1>
+      <p class="not-found-sub">
+        Sorry, the page you're looking for doesn't exist or has been moved.
+      </p>
+      <div
+        style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;"
+      >
+        <a href="/" class="btn btn-primary">Go Home</a>
+        <a href="/contact" class="btn btn-outline-navy">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .not-found {
+    padding: 6rem 1.5rem;
+    text-align: center;
+  }
+
+  .not-found-inner {
+    max-width: 540px;
+  }
+
+  .not-found-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+  }
+
+  .not-found-sub {
+    color: var(--gray);
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+</style>
