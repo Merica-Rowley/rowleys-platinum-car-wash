@@ -22,7 +22,7 @@ import { MapPin, Clock, Phone, Navigation, ExternalLink } from "lucide-astro";
       <div class="location-info">
         <div class="info-block">
           <div class="info-icon">
-            <MapPin size={20} color="var(--accent)" />
+            <MapPin size={20} color="var(--tertiary)" />
           </div>
           <div>
             <h2 class="info-label">Address</h2>
@@ -42,7 +42,7 @@ import { MapPin, Clock, Phone, Navigation, ExternalLink } from "lucide-astro";
       </div>
 
       <div class="info-block">
-        <div class="info-icon"><Clock size={20} color="var(--accent)" /></div>
+        <div class="info-icon"><Clock size={20} color="var(--tertiary)" /></div>
         <div>
           <h2 class="info-label">Hours</h2>
           <div class="hours-grid">
@@ -65,7 +65,7 @@ import { MapPin, Clock, Phone, Navigation, ExternalLink } from "lucide-astro";
       </div>
 
       <div class="info-block">
-        <div class="info-icon"><Phone size={20} color="var(--accent)" /></div>
+        <div class="info-icon"><Phone size={20} color="var(--tertiary)" /></div>
         <div>
           <h2 class="info-label">Phone</h2>
           <a href="tel:4352169598" class="info-text">435-216-9598</a>
@@ -74,7 +74,7 @@ import { MapPin, Clock, Phone, Navigation, ExternalLink } from "lucide-astro";
 
       <div class="info-block">
         <div class="info-icon">
-          <Navigation size={20} color="var(--accent)" />
+          <Navigation size={20} color="var(--tertiary)" />
         </div>
         <div>
           <h2 class="info-label">Getting Here</h2>
@@ -185,7 +185,7 @@ import { MapPin, Clock, Phone, Navigation, ExternalLink } from "lucide-astro";
     flex-shrink: 0;
     width: 40px;
     height: 40px;
-    background: rgba(240, 41, 41, 0.1);
+    background: rgba(153, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -220,7 +220,7 @@ import { MapPin, Clock, Phone, Navigation, ExternalLink } from "lucide-astro";
     margin-top: 0.4rem;
     font-size: 0.875rem;
     font-weight: 600;
-    color: var(--accent);
+    color: var(--tertiary);
     transition: color 0.2s;
   }
 
@@ -241,7 +241,7 @@ import { MapPin, Clock, Phone, Navigation, ExternalLink } from "lucide-astro";
   .map-container {
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(94, 26, 26, 0.12);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
     height: 420px;
   }
 
@@ -262,7 +262,7 @@ import { MapPin, Clock, Phone, Navigation, ExternalLink } from "lucide-astro";
 
   .service-area-card {
     background: var(--white);
-    border: 2px solid #e2eaf0;
+    border: 2px solid #f0e2e2;
     border-radius: 10px;
     padding: 1.25rem 1.5rem;
     transition:
@@ -271,8 +271,8 @@ import { MapPin, Clock, Phone, Navigation, ExternalLink } from "lucide-astro";
   }
 
   .service-area-card:hover {
-    border-color: var(--accent);
-    box-shadow: 0 4px 16px rgba(240, 41, 41, 0.15);
+    border-color: var(--tertiary);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   }
 
   .service-area-card h3 {

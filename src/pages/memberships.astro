@@ -37,33 +37,36 @@ import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
           </div>
           <ul class="plan-features">
             <li>
-              <Check size={16} color="var(--accent)" /><span
+              <Check size={16} color="var(--tertiary)" /><span
                 >Quick pressure wash</span
               >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span
+              <Check size={16} color="var(--tertiary)" /><span
                 >Inside wheel well wash</span
               >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span>Tunnel wash</span>
+              <Check size={16} color="var(--tertiary)" /><span>Tunnel wash</span
+              >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span
+              <Check size={16} color="var(--tertiary)" /><span
                 >Spot free rinse</span
               >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span>Air blow dry</span>
+              <Check size={16} color="var(--tertiary)" /><span
+                >Air blow dry</span
+              >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span
+              <Check size={16} color="var(--tertiary)" /><span
                 >Towels available for additional drying</span
               >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span
+              <Check size={16} color="var(--tertiary)" /><span
                 >Lifted trucks welcome</span
               >
             </li>
@@ -81,50 +84,54 @@ import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
           </div>
           <ul class="plan-features">
             <li>
-              <Check size={16} color="var(--accent)" /><span>Pressure wash</span
+              <Check size={16} color="var(--tertiary)" /><span
+                >Pressure wash</span
               >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span>Bug removal</span>
+              <Check size={16} color="var(--tertiary)" /><span>Bug removal</span
+              >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span
+              <Check size={16} color="var(--tertiary)" /><span
                 >Inside wheel well wash</span
               >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span
+              <Check size={16} color="var(--tertiary)" /><span
                 >Undercarriage spray</span
               >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span
+              <Check size={16} color="var(--tertiary)" /><span
                 >Triple foam soap</span
               >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span
+              <Check size={16} color="var(--tertiary)" /><span
                 >Ceramic coating</span
               >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span>Tire scrub</span>
+              <Check size={16} color="var(--tertiary)" /><span>Tire scrub</span>
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span
+              <Check size={16} color="var(--tertiary)" /><span
                 >Spot free rinse</span
               >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span>Air blow dry</span>
+              <Check size={16} color="var(--tertiary)" /><span
+                >Air blow dry</span
+              >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span
+              <Check size={16} color="var(--tertiary)" /><span
                 >Towels available for additional drying</span
               >
             </li>
             <li>
-              <Check size={16} color="var(--accent)" /><span
+              <Check size={16} color="var(--tertiary)" /><span
                 >Lifted trucks welcome</span
               >
             </li>
@@ -181,7 +188,7 @@ import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
       <div class="benefits-grid">
         <div class="benefit">
           <div class="benefit-icon">
-            <Repeat2 size={24} color="var(--accent)" />
+            <Repeat2 size={24} color="var(--tertiary)" />
           </div>
           <div>
             <h3>Unlimited Washes</h3>
@@ -193,7 +200,7 @@ import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
         </div>
         <div class="benefit">
           <div class="benefit-icon">
-            <CreditCard size={24} color="var(--accent)" />
+            <CreditCard size={24} color="var(--tertiary)" />
           </div>
           <div>
             <h3>Easy Billing</h3>
@@ -205,7 +212,7 @@ import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
         </div>
         <div class="benefit">
           <div class="benefit-icon">
-            <XCircle size={24} color="var(--accent)" />
+            <XCircle size={24} color="var(--tertiary)" />
           </div>
           <div>
             <h3>Cancel Anytime</h3>
@@ -217,7 +224,7 @@ import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
         </div>
         <div class="benefit">
           <div class="benefit-icon">
-            <HelpCircle size={24} color="var(--accent)" />
+            <HelpCircle size={24} color="var(--tertiary)" />
           </div>
           <div>
             <h3>Easy to Manage</h3>
@@ -338,7 +345,7 @@ import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
   }
 
   .plan-card:hover {
-    box-shadow: 0 8px 28px rgba(144, 43, 43, 0.12);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
   }
 
   .plan-header {
@@ -348,11 +355,11 @@ import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
   }
 
   .plan-name {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--tertiary);
   }
 
   .plan-price {
@@ -388,7 +395,7 @@ import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
     align-items: center;
     gap: 0.6rem;
     font-size: 0.9rem;
-    color: var(--dark);
+    color: var(--gray);
   }
 
   /* ── How It Works ── */
@@ -450,7 +457,7 @@ import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
     flex-shrink: 0;
     width: 44px;
     height: 44px;
-    background: rgba(240, 41, 41, 0.1);
+    background: rgba(153, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -475,7 +482,7 @@ import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
     margin-top: 1.5rem;
     border-radius: 12px;
     overflow: hidden;
-    border: 2px solid #f4dcdc;
+    border: 2px solid rgba(153, 0, 0, 0.4);
     background-color: var(--white);
   }
 
@@ -486,7 +493,7 @@ import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
   .tab-buttons {
     display: flex;
     gap: 0;
-    border-bottom: 2px solid #f0e2e2;
+    border-bottom: 2px solid rgba(153, 0, 0, 0.4);
     margin-bottom: 0;
   }
 
@@ -512,7 +519,7 @@ import { Repeat2, CreditCard, XCircle, HelpCircle, Check } from "lucide-astro";
 
   .tab-btn--active {
     color: var(--primary);
-    border-bottom-color: var(--accent);
+    border-bottom-color: var(--secondary);
   }
 
   .tab-content--hidden {

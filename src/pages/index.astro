@@ -29,7 +29,6 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
         <a href="/memberships" class="btn btn-outline-white">Join Today</a>
       </div>
     </div>
-    <div class="hero-accent"></div>
   </section>
 
   <!-- ── Packages Overview ── -->
@@ -44,7 +43,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
       <div class="packages-grid">
         <div class="package-card">
           <div class="package-icon">
-            <Droplets size={36} color="var(--accent)" />
+            <Droplets size={36} color="var(--tertiary)" />
           </div>
           <h3 class="package-name">The Express</h3>
           <p class="package-desc">
@@ -67,7 +66,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
 
         <div class="package-card">
           <div class="package-icon">
-            <Sparkles size={36} color="var(--accent)" />
+            <Sparkles size={36} color="var(--tertiary)" />
           </div>
           <h3 class="package-name">The Works</h3>
           <p class="package-desc">
@@ -105,7 +104,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
         <div class="features-list">
           <div class="feature">
             <div class="feature-icon">
-              <Zap size={22} color="var(--accent)" />
+              <Zap size={22} color="var(--tertiary)" />
             </div>
             <div>
               <h3>Fast Service</h3>
@@ -114,7 +113,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
           </div>
           <div class="feature">
             <div class="feature-icon">
-              <Repeat2 size={22} color="var(--accent)" />
+              <Repeat2 size={22} color="var(--tertiary)" />
             </div>
             <div>
               <h3>Unlimited Memberships</h3>
@@ -123,7 +122,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
           </div>
           <div class="feature">
             <div class="feature-icon">
-              <Truck size={22} color="var(--accent)" />
+              <Truck size={22} color="var(--tertiary)" />
             </div>
             <div>
               <h3>Trucks Welcome</h3>
@@ -132,7 +131,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
           </div>
           <div class="feature">
             <div class="feature-icon">
-              <MapPin size={22} color="var(--accent)" />
+              <MapPin size={22} color="var(--tertiary)" />
             </div>
             <div>
               <h3>Conveniently Located</h3>
@@ -165,14 +164,14 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
         >
           Starting at just $15/month. Cancel anytime. Wash as often as you want.
         </p>
-        <a href="/memberships" class="btn btn-accent-solid">Get Started</a>
+        <a href="/memberships" class="btn btn-primary">Get Started</a>
       </div>
       <div class="membership-cta-prices">
-        <div class="cta-price-card cta-price-card--accent">
+        <div class="cta-price-card">
           <span class="cta-price-name">The Express</span>
           <span class="cta-price-amount">$15<span>/mo</span></span>
         </div>
-        <div class="cta-price-card cta-price-card--accent">
+        <div class="cta-price-card">
           <span class="cta-price-name">The Works</span>
           <span class="cta-price-amount">$25<span>/mo</span></span>
         </div>
@@ -255,9 +254,6 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
     inset: 0;
     background: linear-gradient(
       to right,
-      /* rgba(94, 26, 26, 0.88) 0%,
-      rgba(94, 26, 26, 0.55) 60%,
-      rgba(94, 26, 26, 0.2) 100% */
       rgba(0, 0, 0, 0.88) 0%,
       rgba(0, 0, 0, 0.55) 60%,
       rgba(0, 0, 0, 0.2) 100%
@@ -394,7 +390,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
     flex-shrink: 0;
     width: 40px;
     height: 40px;
-    background: rgba(240, 41, 41, 0.1);
+    background: rgba(153, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -424,7 +420,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
 
   /* ── Membership CTA ── */
   .membership-cta {
-    background: var(--gray);
+    background: var(--dark-gray);
   }
 
   .membership-cta-inner {
@@ -435,19 +431,14 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
   }
 
   .cta-price-card {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     margin-bottom: 1rem;
-  }
-
-  .cta-price-card--accent {
-    background: rgba(240, 41, 41, 0.15);
-    border-color: var(--accent);
   }
 
   .cta-price-name {

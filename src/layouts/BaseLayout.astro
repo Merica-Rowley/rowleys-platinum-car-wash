@@ -65,12 +65,15 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
 
     <style is:global>
       :root {
-        --primary: #902b2b;
-        --accent: #f02929;
-        --dark: #5e1a1a;
+        --primary: #990000;
+        --secondary: #b0280e;
+        --tertiary: #c74f1c;
+        --accent: #e09e04;
         --white: #ffffff;
-        --light: #f9f5f5;
+        --black: #000000;
+        --dark-gray: #3f3f3f;
         --gray: #6e6e6e;
+        --light: #f7f7f7;
 
         --font-display: "Barlow Condensed", sans-serif;
         --font-body: "Inter", sans-serif;
@@ -93,7 +96,7 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
 
       body {
         font-family: var(--font-body);
-        color: var(--dark);
+        color: var(--dark-gray);
         background: var(--white);
         line-height: 1.6;
       }
@@ -135,7 +138,7 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
       .nav-logo-pill {
         background: var(--white);
         border-radius: 50%;
-        border: 3px solid var(--accent);
+        border: 3px solid var(--tertiary);
         padding: 0.2rem 0.5rem 0.45rem 0.6rem;
         display: flex;
         align-items: center;
@@ -172,7 +175,7 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
         left: 0.75rem;
         right: 0.75rem;
         height: 2px;
-        background: var(--accent);
+        background: var(--tertiary);
         transform: scaleX(0);
         transition: transform 0.2s ease;
       }
@@ -186,7 +189,7 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
       }
 
       .nav-cta {
-        background: var(--accent);
+        background: var(--tertiary);
         color: var(--white) !important;
         font-weight: 600 !important;
         padding: 0.4rem 1.25rem !important;
@@ -199,8 +202,8 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
       }
 
       .nav-cta:hover {
-        background: var(--white) !important;
-        color: var(--primary) !important;
+        background: var(--accent) !important;
+        color: var(--white) !important;
       }
 
       .nav-cta::after {
@@ -209,7 +212,7 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
 
       /* ── Footer ── */
       .site-footer {
-        background: #000;
+        background: var(--black);
         color: var(--white);
         padding: 3rem 1.5rem 1.5rem;
       }
@@ -232,7 +235,7 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
       .footer-logo-pill {
         background: var(--white);
         border-radius: 50%;
-        border: 3px solid var(--accent);
+        border: 3px solid var(--tertiary);
         padding: 0.4rem 0.6rem 0.05rem 0.7rem;
         display: inline-flex;
         align-items: center;
@@ -255,7 +258,7 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
         font-size: 1rem;
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        color: var(--accent);
+        color: var(--tertiary);
         margin-bottom: 0.75rem;
       }
 
@@ -273,7 +276,7 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
       }
 
       .footer-col ul a:hover {
-        color: var(--accent);
+        color: var(--tertiary);
       }
 
       .footer-col address {
@@ -291,7 +294,7 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
 
       .footer-col a {
         font-size: 0.9rem;
-        color: var(--accent);
+        color: var(--tertiary);
         line-height: 1.8;
       }
 
@@ -334,26 +337,15 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
       }
 
       .btn-primary {
-        background: var(--accent);
-        color: var(--white);
-        border: 2px solid var(--accent);
-      }
-
-      .btn-primary:hover {
         background: var(--primary);
         color: var(--white);
         border: 2px solid var(--primary);
       }
 
-      .btn-outline {
-        background: transparent;
+      .btn-primary:hover {
+        background: var(--accent);
         color: var(--white);
-        border: 2px solid var(--white);
-      }
-
-      .btn-outline:hover {
-        background: var(--white);
-        color: var(--primary);
+        border: 2px solid var(--accent);
       }
 
       .section {
@@ -385,7 +377,7 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
         font-weight: 600;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        color: var(--accent);
+        color: var(--tertiary);
         margin-bottom: 0.4rem;
       }
 
@@ -432,39 +424,6 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
         color: var(--primary);
       }
 
-      .btn-accent-solid {
-        display: inline-block;
-        padding: 0.7rem 1.5rem;
-        border-radius: var(--radius);
-        font-weight: 600;
-        font-size: 0.95rem;
-        background: var(--accent);
-        color: var(--white);
-        text-align: center;
-        border: 2px solid var(--accent);
-        transition:
-          background 0.2s,
-          color 0.2s,
-          border-color 0.2s;
-      }
-
-      .btn-accent-solid:hover {
-        background: var(--white);
-        border-color: var(--white);
-        color: var(--dark);
-      }
-
-      /* Other reused styles */
-      .hero-accent {
-        position: absolute;
-        bottom: -2px;
-        right: 0;
-        width: 40%;
-        height: 6px;
-        background: var(--accent);
-        z-index: 2;
-      }
-
       /* Mobile Nav Hamburger */
       /* ── Hamburger ── */
       .nav-hamburger {
@@ -506,7 +465,7 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
       /* ── Mobile Nav ── */
       .nav-mobile {
         display: none;
-        background: var(--primary);
+        background: var(--secondary);
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         position: sticky;
         top: 80px;
@@ -545,7 +504,6 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
       }
 
       .nav-mobile-cta {
-        color: var(--white) !important;
         font-weight: 600 !important;
       }
 
@@ -655,7 +613,8 @@ const siteUrl = "https://platinumcarwash.com"; // update with real URL
             style="color: rgba(255,255,255,0.5); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em;"
             >Phone</span
           ><br />
-          <a href="tel:4352169598" style="color: var(--accent);">435-216-9598</a
+          <a href="tel:4352169598" style="color: var(--tertiary);"
+            >435-216-9598</a
           >
         </div>
       </div>
