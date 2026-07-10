@@ -44,7 +44,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
       <div class="packages-grid">
         <div class="package-card">
           <div class="package-icon">
-            <Droplets size={36} color="var(--cyan)" />
+            <Droplets size={36} color="var(--accent)" />
           </div>
           <h3 class="package-name">The Express</h3>
           <p class="package-desc">
@@ -62,12 +62,12 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
               <span class="price-label">Monthly Membership</span>
             </div>
           </div>
-          <a href="/pricing" class="btn btn-outline-navy">View Details</a>
+          <a href="/pricing" class="btn btn-outline-primary">View Details</a>
         </div>
 
         <div class="package-card">
           <div class="package-icon">
-            <Sparkles size={36} color="var(--cyan)" />
+            <Sparkles size={36} color="var(--accent)" />
           </div>
           <h3 class="package-name">The Works</h3>
           <p class="package-desc">
@@ -85,7 +85,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
               <span class="price-label">Monthly Membership</span>
             </div>
           </div>
-          <a href="/pricing" class="btn btn-outline-navy">View Details</a>
+          <a href="/pricing" class="btn btn-outline-primary">View Details</a>
         </div>
       </div>
     </div>
@@ -105,7 +105,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
         <div class="features-list">
           <div class="feature">
             <div class="feature-icon">
-              <Zap size={22} color="var(--cyan)" />
+              <Zap size={22} color="var(--accent)" />
             </div>
             <div>
               <h3>Fast Service</h3>
@@ -114,7 +114,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
           </div>
           <div class="feature">
             <div class="feature-icon">
-              <Repeat2 size={22} color="var(--cyan)" />
+              <Repeat2 size={22} color="var(--accent)" />
             </div>
             <div>
               <h3>Unlimited Memberships</h3>
@@ -123,7 +123,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
           </div>
           <div class="feature">
             <div class="feature-icon">
-              <Truck size={22} color="var(--cyan)" />
+              <Truck size={22} color="var(--accent)" />
             </div>
             <div>
               <h3>Trucks Welcome</h3>
@@ -132,7 +132,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
           </div>
           <div class="feature">
             <div class="feature-icon">
-              <MapPin size={22} color="var(--cyan)" />
+              <MapPin size={22} color="var(--accent)" />
             </div>
             <div>
               <h3>Conveniently Located</h3>
@@ -165,7 +165,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
         >
           Starting at just $15/month. Cancel anytime. Wash as often as you want.
         </p>
-        <a href="/memberships" class="btn btn-cyan-solid">Get Started</a>
+        <a href="/memberships" class="btn btn-accent-solid">Get Started</a>
       </div>
       <div class="membership-cta-prices">
         <div class="cta-price-card cta-price-card--accent">
@@ -222,7 +222,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
           style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.25rem;"
         >
           <a href="/location" class="btn btn-primary">Get Directions</a>
-          <a href="tel:4352169598" class="btn btn-outline-navy">Call Us</a>
+          <a href="tel:4352169598" class="btn btn-outline-primary">Call Us</a>
         </div>
       </div>
     </div>
@@ -255,9 +255,12 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
     inset: 0;
     background: linear-gradient(
       to right,
-      rgba(26, 31, 94, 0.88) 0%,
-      rgba(26, 31, 94, 0.55) 60%,
-      rgba(26, 31, 94, 0.2) 100%
+      /* rgba(94, 26, 26, 0.88) 0%,
+      rgba(94, 26, 26, 0.55) 60%,
+      rgba(94, 26, 26, 0.2) 100% */
+      rgba(0, 0, 0, 0.88) 0%,
+      rgba(0, 0, 0, 0.55) 60%,
+      rgba(0, 0, 0, 0.2) 100%
     );
   }
 
@@ -310,7 +313,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
   }
 
   .package-card:hover {
-    box-shadow: 0 8px 24px rgba(43, 57, 144, 0.12);
+    box-shadow: 0 8px 24px rgba(144, 43, 43, 0.12);
   }
 
   .package-icon {
@@ -322,7 +325,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
     font-family: var(--font-display);
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--navy);
+    color: var(--primary);
   }
 
   .package-desc {
@@ -350,7 +353,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
     font-family: var(--font-display);
     font-size: 2rem;
     font-weight: 700;
-    color: var(--navy);
+    color: var(--primary);
     line-height: 1;
   }
 
@@ -391,7 +394,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
     flex-shrink: 0;
     width: 40px;
     height: 40px;
-    background: rgba(41, 190, 240, 0.1);
+    background: rgba(240, 41, 41, 0.1);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -402,7 +405,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
     font-family: var(--font-display);
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--navy);
+    color: var(--primary);
     margin-bottom: 0.2rem;
   }
 
@@ -416,12 +419,12 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
     height: 420px;
     object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(26, 31, 94, 0.15);
+    box-shadow: 0 8px 32px rgba(94, 26, 26, 0.15);
   }
 
   /* ── Membership CTA ── */
   .membership-cta {
-    background: var(--navy);
+    background: var(--gray);
   }
 
   .membership-cta-inner {
@@ -443,8 +446,8 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
   }
 
   .cta-price-card--accent {
-    background: rgba(41, 190, 240, 0.15);
-    border-color: var(--cyan);
+    background: rgba(240, 41, 41, 0.15);
+    border-color: var(--accent);
   }
 
   .cta-price-name {
@@ -485,7 +488,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
   .photo-break-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(26, 31, 94, 0.55);
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -515,7 +518,7 @@ import { Zap, Repeat2, Truck, MapPin, Droplets, Sparkles } from "lucide-astro";
     height: 360px;
     object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(26, 31, 94, 0.12);
+    box-shadow: 0 8px 32px rgba(94, 26, 26, 0.12);
   }
 
   .location-address {
