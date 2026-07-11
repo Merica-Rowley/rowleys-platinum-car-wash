@@ -62,7 +62,7 @@ import { Heart, Shield, Sparkles, Users } from "lucide-astro";
       <div class="values-grid">
         <div class="value-card">
           <div class="value-icon">
-            <Sparkles size={24} color="var(--cyan)" />
+            <Sparkles size={24} color="var(--tertiary)" />
           </div>
           <h3>Quality</h3>
           <p>
@@ -72,7 +72,7 @@ import { Heart, Shield, Sparkles, Users } from "lucide-astro";
         </div>
         <div class="value-card">
           <div class="value-icon">
-            <Shield size={24} color="var(--cyan)" />
+            <Shield size={24} color="var(--tertiary)" />
           </div>
           <h3>Reliability</h3>
           <p>
@@ -81,7 +81,7 @@ import { Heart, Shield, Sparkles, Users } from "lucide-astro";
         </div>
         <div class="value-card">
           <div class="value-icon">
-            <Heart size={24} color="var(--cyan)" />
+            <Heart size={24} color="var(--tertiary)" />
           </div>
           <h3>Community</h3>
           <p>
@@ -91,7 +91,7 @@ import { Heart, Shield, Sparkles, Users } from "lucide-astro";
         </div>
         <div class="value-card">
           <div class="value-icon">
-            <Users size={24} color="var(--cyan)" />
+            <Users size={24} color="var(--tertiary)" />
           </div>
           <h3>Simplicity</h3>
           <p>
@@ -129,8 +129,8 @@ import { Heart, Shield, Sparkles, Users } from "lucide-astro";
         style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;"
       >
         <a href="/pricing" class="btn btn-primary">See Pricing</a>
-        <a href="/memberships" class="btn btn-outline-navy">Join Today</a>
-        <a href="/location" class="btn btn-outline-navy">Find Us</a>
+        <a href="/memberships" class="btn btn-outline-primary">Join Today</a>
+        <a href="/location" class="btn btn-outline-primary">Find Us</a>
       </div>
     </div>
   </section>
@@ -150,7 +150,7 @@ import { Heart, Shield, Sparkles, Users } from "lucide-astro";
     height: 420px;
     object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(26, 31, 94, 0.12);
+    box-shadow: 0 8px 32px rgba(94, 26, 26, 0.12);
   }
 
   .story-body {
@@ -174,7 +174,7 @@ import { Heart, Shield, Sparkles, Users } from "lucide-astro";
 
   .value-card {
     background: var(--white);
-    border: 2px solid #e2eaf0;
+    border: 2px solid #f0e2e2;
     border-radius: 12px;
     padding: 1.75rem;
     display: flex;
@@ -186,14 +186,14 @@ import { Heart, Shield, Sparkles, Users } from "lucide-astro";
   }
 
   .value-card:hover {
-    border-color: var(--cyan);
-    box-shadow: 0 4px 16px rgba(41, 190, 240, 0.15);
+    border-color: var(--tertiary);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   }
 
   .value-icon {
     width: 44px;
     height: 44px;
-    background: rgba(41, 190, 240, 0.1);
+    background: rgba(153, 0, 0, 0.1);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -204,7 +204,7 @@ import { Heart, Shield, Sparkles, Users } from "lucide-astro";
     font-family: var(--font-display);
     font-size: 1.2rem;
     font-weight: 700;
-    color: var(--navy);
+    color: var(--primary);
   }
 
   .value-card p {
@@ -229,7 +229,7 @@ import { Heart, Shield, Sparkles, Users } from "lucide-astro";
   .photo-break-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(26, 31, 94, 0.55);
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
